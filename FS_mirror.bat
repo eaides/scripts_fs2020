@@ -1,0 +1,2 @@
+@CMD /C START "" /D "C:\Program Files\Oculus\Support\oculus-diagnostics" "C:\Program Files\Oculus\Support\oculus-diagnostics\OculusMirror.exe" 
+--IncludeGuardian --IncludeNotifications --IncludeSystemGui --RightEyeOnly --Size 1920 1080 --FovTanAngleMultiplier 0.7 0.7

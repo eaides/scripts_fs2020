@@ -1,0 +1,7 @@
+server:asw.off
+service set-pixels-per-display-pixel-override 1.8
+service set-client-fov-tan-angle-multiplier 0.785 0.785
+service set-use-fov-stencil false
+service enable-adaptive-gpu-perf-scale false
+server:asw.off
+exit

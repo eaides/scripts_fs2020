@@ -1,0 +1,70 @@
+PS C:\Program Files\Oculus\Support\oculus-diagnostics> .\OculusDebugToolCLI
+Enter commands or "help" to see available commands. "exit" to end.
+To send server-side commands, prefix them with "server:..."
+=> help
+
+Client-side command(s):
+        exit
+        help
+        layer
+        layerhud
+        perfhud
+        service
+        stereohud
+        telemetry
+
+        To get help with a specific command, use:
+                help <command> [<sub-command> ...]
+
+Server-side command(s):
+        Allocator.DisableTracking (no arguments) Disables heap tracking.
+        Allocator.EnableTracking (no arguments) Enables heap tracking.
+        Allocator.ReportState (no arguments)    Reports the general state and settings of the global Allocator.
+        Allocator.Trace <filepath> [filter specification] Triggers the logging of the default allocator heap, with an optional filter.
+        asw.Adaptive [bit to enable adaptive median filter] Toggles adaptive median filtering in extrapolation
+        asw.Auto (no arguments)                 Enables auto ASW operation
+        asw.Availability (no arguments)         Prints ASW availability
+        asw.Clock18 (no arguments)              Simulates an extrapolated 18 Hz display (Clock18)
+        asw.Clock30 (no arguments)              Simulates an extrapolated 30 Hz display (Clock30)
+        asw.Clock45 (no arguments)              Simulates an extrapolated 45 Hz display (Clock45)
+        asw.Depth [bit to enable depth motion vectors] Toggles depth testing in extrapolation
+        asw.Median [bit to enable median filter] Toggles median filtering in extrapolation
+        asw.Mode (no arguments)                 Prints the current ASW test mode
+        asw.Off (no arguments)                  Disables any ASW operation
+        asw.OverrideFocusedApp [default|off|auto|force] Sets ASW mode override for the app in VR focus
+        asw.Phase45 (no arguments)              Simulates an extrapolated broken 45 Hz display (Phase45)
+        asw.ReverseMapWithCPU [bit to enable reverse-mapping of motion vectors on CPU] Toggles CPU path for reverse-mapped motion vectors
+        asw.SceneChange [bit to enable scene change detector] Toggles scene change detector
+        asw.Sim45 (no arguments)                Simulates app 45 Hz rendering (Force45fps)
+        asw.SimpleRasterizer [bit to enable simple motion vector rasterizer] Toggles simple motion vector rasterizer
+        asw.ThreadCPUReverseMap [bit to enable threaded reverse-mapping of motion vectors on CPU] Toggles CPU threading for reverse-mapped motion vectors
+        cam.ShowConnected                       Prints a list of connected cameras
+        cam.SimCatastrophicFailure [SERIAL]     Simulates what happens when a camera stops responding
+        emu <Emulation Command> [Arguments]     Send a command to the active plugin (if it can receive commands)
+        EnumHmd (no arguments)                  Enumerate all headsets
+        help [CMD_NAME]                         Prints command help info
+        pass.aswiad (no arguments)              Enables ASW IAD adjustment in passthrough camera image
+        pass.cpufilter (no arguments)           Enables CPU depth filtering in passthrough camera image
+        pass.depth (no arguments)               Enables PTW adjustment in passthrough camera image
+        pass.filter (no arguments)              Enables depth filtering in passthrough camera image
+        pass.gpufilter (no arguments)           Enables GPU depth filtering in passthrough camera image
+        pass.guard [bit to enable guardian intrusion] Enables or disables guardian intrusion with passthrough
+        pass.hud (no arguments)                 Enables depth passthrough camera hud
+        pass.iad (no arguments)                 Enables PTW IAD adjustment in passthrough camera image
+        pass.low (no arguments)                 Shows low res passthrough camera image
+        pass.lowfilter (no arguments)           Enables low value filtering in passthrough camera image
+        pass.medianfilter (no arguments)        Enables median filtering in passthrough camera image
+        pass.mixreality [0|1]                   Enabled passthrough mixing with application layers
+        pass.nodepth (no arguments)             Disables PTW adjustment in passthrough camera image
+        pass.nofilter (no arguments)            Disables depth filtering in passthrough camera image
+        pass.nohud (no arguments)               Disables depth passthrough camera hud
+        pass.noiad (no arguments)               Disables PTW IAD adjustment in passthrough camera image
+        pass.super (no arguments)               Shows super res passthrough camera image
+        pass.vis (no arguments)                 Sets the active passthrough visualization
+        rift.get_debug_hmd (no arguments)       return configured rift debug `hmd_type`
+        rift.set_debug_hmd hmd_type             configure rift debug hmd to type `hmd_type`
+        SetHmd serialNumber                     Set active headset
+        setOutputColorSpace [bit to enable/disable color conversion] Override output color space to None [0], DCI-P3 [1], sRGB(Rec709) [2]
+        Touch.DisableSleep <true/false (Should sleep be disabled on Touch?)> Prevents the Touch controllers from ever going to sleep. The battery will be drained.
+        ValidateHMD (no arguments)              run hardware to test that hmd streams camera and imu properly
+        xray [value 0-100]                      Sets the xray percentage, a value 0-100 which prioritizes Dash at the 0th end, and prioritizes Passthrough at the 100th end
